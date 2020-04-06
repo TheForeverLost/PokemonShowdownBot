@@ -14,8 +14,14 @@ So with this project i wanted to use technologies i always wanted to try to make
 
 I also plan to use web automation and AI/Ml to create a bot that will play the game as a CPU AI
 
+## Understanding the files
+
+- ### PokemonShowdownAnalysis.ipynb
+
+Before any sort of project it was essential to understand how the entire project works as well as the dynamics of the game so this notebook extracts all possible data from smogon resources such as pokemon data , move data , battle records , image resources etc
+
 ## References
 
-you can check out the various projects by smogon here
+you can check out the various projects by smogon here<br>
 [![](https://avatars2.githubusercontent.com/u/5144145?s=200&v=4)](https://github.com/smogon) 
 
