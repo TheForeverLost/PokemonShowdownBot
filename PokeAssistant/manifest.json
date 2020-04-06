@@ -1,20 +1,20 @@
 {
-
-  "manifest_version": 2,
   "name": "PokeAssistant",
-  "version": "0.5",
-
-  "description": "Team Builder Assistant",
-
-  "icons": {
-    "48": "icons/assistant.gif"
+  "version": "1.0",
+  "description": "Teambuilder assistant",
+  "permissions": ["declarativeContent","storage","activeTab"],
+  "background": {
+    "scripts": ["index.js"],
+    "persistent": false
   },
-
-  "content_scripts": [
-    {
-      "matches": ["*://*.mozilla.org/*"],
-      "js": ["index.js"]
+  "page_action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "32": "icons/assistant-0.png"      
     }
-  ]
-
+  },
+  "icons": {
+    "32": "icons/assistant-0.png"
+  },
+  "manifest_version": 2
 }
