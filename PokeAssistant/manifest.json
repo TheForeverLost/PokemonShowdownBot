@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "PokeAssistant",
+  "version": "0.5",
+
+  "description": "Team Builder Assistant",
+
+  "icons": {
+    "48": "https://www.smogon.com/dex/media/sprites/xy/rotom.gif"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["index.js"]
+    }
+  ]
+
+}
