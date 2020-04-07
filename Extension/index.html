@@ -4,7 +4,6 @@
         <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     </head>
     <body>
-      <script src="popup.js"></script>
       <style>
           body{
             width: 400px;
@@ -13,20 +12,21 @@
         <div class="container">
             <div class="card mb-3">
                 <h3 class="card-header">Welcome to Teambuilder Assistant</h3>
-                <div class="card-body">
+                <div class="card-body row">
                   <h6 class="card-subtitle text-muted">Evaluate Team</h6>
+                  <button type="button" id="start" class="btn btn-outline-primary">Evaluate</button>
                 </div>
                 <div class="card-body">
                   <p class="card-text">The teambuilder assistant will compare your team based on model trained over 1000 recent 
                       battles to see its adaptablilty with the current meta</p>
                 </div>
-                <div class="card-body" id="teams_found">
-                </div>
+                                  
                 <div class="card-footer text-muted">
                     &copy;TheForeverLost
                 </div>
               </div>              
       </div>
+      <script src="popup.js"></script>
       
     </body>
   </html>

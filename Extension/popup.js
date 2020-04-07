@@ -1,4 +1,11 @@
-chrome.storage.local.get(["showdown_teams"] , function(data){
-    var name = JSON.stringify(data)
-    document.getElementById("teams_found").innerHTML = name;
-});
+let start = document.getElementById('start');
+
+  
+start.onclick = function(element) {
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+      chrome.tabs.executeScript(
+          tabs[0].id,
+          {file:"handleteams.js"});
+    });
+  };
+
