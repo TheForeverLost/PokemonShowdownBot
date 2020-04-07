@@ -22,7 +22,7 @@ Before any sort of project it was essential to understand how the entire project
 
 dynamics of the game so this notebook extracts all possible data from smogon resources such as pokemon data , move data , battle records , image resources etc
 
-**PokeAssistant**
+**Extension**
 
 Chrome Extension that will be used as an assistant in teambuilder
 
