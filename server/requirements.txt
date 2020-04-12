@@ -1,3 +1,4 @@
-pymongo[srv]
+pymongo
+pandas
 dnspython
-
+flask
