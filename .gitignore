@@ -1,0 +1,3 @@
+server/pythonlambda/*
+!server/pythonlambda/lambda_function.py
+!server/pythonlambda/requirements.txt
