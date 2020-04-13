@@ -4,9 +4,16 @@ import sys
 import subprocess
 import pymongo
 import dns
+import json
 from pymongo import MongoClient
 from random import shuffle
-client = MongoClient('mongodb', 27017 , username='root',password='example')
+
+# For localhost
+clientname = "mongodb"
+port = 27017
+username = "root"
+password = "example"
+client = MongoClient(clientname, port , username=username,password=password)
 db = client.pokemon
 teamdata = db["teamdata"]
 typedata = db["typedata"]
@@ -253,7 +260,12 @@ def partner_suggestion(team):
     cand2 = getTeamData("partner2" , "name"  , member)
     cand3 = getTeamData("partner3" , "name"  , member)
     if not checkNone(cand1):
-      cand = cand + [cand1,cand2,cand3]
+      if cand1 not in team and cand1 not in cand:
+        cand = cand + [cand1]
+      if cand2 not in team and cand2 not in cand:
+        cand = cand + [cand2]
+      if cand3 not in team and cand3 not in cand:
+        cand = cand + [cand3]
   for c in cand:
     flag = True
     for t in get_types(c):
@@ -298,6 +310,17 @@ def get_suggestion(team):
     return foundation()
 
 def lambda_handler(event, context):
-    context.log(event["team"])
+  try:
     return get_suggestion(event["team"])
-    
+  except:
+    event = json.loads(event["body"])
+    print(event["team"])
+    res = get_suggestion(event["team"])
+    return {
+        "statusCode": 200,
+        "headers": {
+            "Content-Type" : "application/json"
+        },
+        "body": json.dumps(res),
+        "isBase64Encoded": False
+    }
