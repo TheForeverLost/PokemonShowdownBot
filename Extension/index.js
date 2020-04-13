@@ -12,3 +12,19 @@ chrome.runtime.onInstalled.addListener(function() {
     }]);
   });
 });
+
+chrome.runtime.onMessage.addListener((msg, sender, response) => {
+  // First, validate the message's structure.
+  console.log(msg,sender)
+  $.post({
+    type: "POST",
+    headers : {
+      "Access-Control-Allow-Origin": '*',
+      'Content-Type': 'application/json'
+    },
+    url: "https://kpld3vd283.execute-api.ap-south-1.amazonaws.com/default/pokemonTeamAssistant",
+    data: msg
+  },(response)=>{
+    console.log(response)
+  });
+});

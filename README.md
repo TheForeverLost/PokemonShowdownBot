@@ -26,8 +26,27 @@ dynamics of the game so this notebook extracts all possible data from smogon res
 
 Chrome Extension that will be used as an assistant in teambuilder
 
+**Server**
+
+This folder contains the container information as well source code for all the microservices involved as well as replica db servers to run on localhost  for development purpose 
+
+To run the microservice at localhost along with a replica DB server :
+
+1.  Switch into the server directory
+2. Run `docker-compose up`
+
+To build and push to aws lambda
+
+1. configure aws cli
+   `aws configure`
+2.  give the deployment script permissions
+   `chmod u+x ./deploy.sh`
+3. run the deployment script
+   `./deploy.sh` 
+
 ## References
 
-you can check out the various projects by smogon here<br>
-[![](https://avatars2.githubusercontent.com/u/5144145?s=200&v=4)](https://github.com/smogon) 
+1. you can check out the various projects by smogon here<br>
+   [![](https://avatars2.githubusercontent.com/u/5144145?s=200&v=4)](https://github.com/smogon) 
 
+2. For emulating the aws lambda function on my pc , I have used the [lambci/lamda:python3.6](https://hub.docker.com/r/lambci/lambda) docker image which is an abstraction of the aws lambda environment
