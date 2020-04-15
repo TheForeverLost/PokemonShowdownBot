@@ -44,6 +44,10 @@ To build and push to aws lambda
 3. run the deployment script
    `./deploy.sh` 
 
+**Analyzer**
+
+This consists of a node environment where analysis of the pokemon showdown game mechanics take place with the help of various smogon npm packages 
+
 ## References
 
 1. you can check out the various projects by smogon here<br>
