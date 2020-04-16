@@ -9,8 +9,9 @@
   }
   
   body {
-    height: 200px;
-    width: 450px;
+    height: fit-content;
+    min-height: 4rem;
+    width: 200px;
     color: black;
     background-color: white;
     margin: 0;

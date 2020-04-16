@@ -6,8 +6,9 @@ import dns
 import json
 from pymongo import MongoClient
 from random import shuffle
-
+import re
 # For localhost
+    
 clientname = "mongodb"
 port = 27017
 username = "root"
@@ -16,7 +17,7 @@ client = MongoClient(clientname, port , username=username,password=password)
 db = client.pokemon
 teamdata = db["teamdata"]
 typedata = db["typedata"]
-
+saved_statdistribution = {}
 dist = {'Attack': 246.03972442508413,
  'Defense': 241.36598498023446,
  'HP': 342.045719521976,
@@ -28,17 +29,27 @@ def bestFromTeam(reqkey , filterkey , value):
   return teamdata.find({ filterkey : value }).sort([("popularity",-1 ),("Total",-1)])[0][reqkey]
 
 def getTeamData(reqkey , filterkey , value):
+  if filterkey =="name":
+    new_name = ""
+    for ch in value:
+      new_name = new_name + ch + '-?'
+    regex = re.compile(new_name,re.IGNORECASE)
+    value = regex
   return teamdata.find_one({ filterkey : value })[reqkey]
 
 def getTypeData( filterkey , value):
   return typedata.find_one({ filterkey : value })
 
-saved_statdistribution = {}
+
 
 def getStats(name , stat):
   if name in saved_statdistribution:
     return saved_statdistribution[name][stat]
-  res = teamdata.find_one({ "name" : name })
+  new_name = ""
+  for ch in name:
+    new_name = new_name + ch + '-?'
+  regex = re.compile(new_name,re.IGNORECASE)
+  res = teamdata.find_one({ "name" : regex })
   saved_statdistribution[name] = {
         "HP": (res["HP_max"]+res["HP_min"])/2 ,
         "Attack" : (res["Attack_max+"]+res["Attack_min-"])/2 ,
@@ -220,7 +231,7 @@ def get_alteration(team):
       new_poke = [y for y in new_poke if y not in team]
       new_poke = list(set(new_poke))
       shuffle(new_poke)
-      for x in new_poke[:5]:
+      for x in new_poke[:2]:
         new_team = remain+[x]  
         analysis[poke+x] = {
             "with" : x,
@@ -310,7 +321,19 @@ def get_suggestion(team):
 
 def lambda_handler(event, context):
   try:
-    client = MongoClient(clientname, port , username=username,password=password)
+    flag = True
+    while(flag):
+      try:
+        client.server_info()
+        flag = False
+      except:
+        print("server delay")
+        clientname = "mongodb"
+        port = 27017
+        username = "root"
+        password = "example"
+        client = MongoClient(clientname, port , username=username,password=password)
+
     print(event)
     return get_suggestion(event)
   except:
@@ -328,3 +351,4 @@ def lambda_handler(event, context):
         "body": json.dumps({}),
         "isBase64Encoded": False
     }
+  

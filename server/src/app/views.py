@@ -10,9 +10,9 @@ CORS(app, support_credentials=True)
 @cross_origin(supports_credentials=True)
 def home():
    try:
-      event = request.args["team"]
+      event = request.args
       print(event)
-      event = event.split("_")
+      event = event["team"].split("_")
       return src.lambda_handler(event,None)
    except:
       return src.lambda_handler([],None)

@@ -8,8 +8,9 @@ chrome.runtime.onInstalled.addListener(function() {
         pageUrl: {hostEquals: 'play.pokemonshowdown.com'},
       })
       ],
-          actions: [new chrome.declarativeContent.ShowPageAction()]
+          actions: [new chrome.declarativeContent.ShowPageAction() ]
     }]);
   });
+
 });
 
