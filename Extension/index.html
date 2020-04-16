@@ -1,32 +1,80 @@
 <!DOCTYPE html>
   <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+        rel="stylesheet"
+      />
     </head>
+    
     <body>
-      <style>
-          body{
-            width: 400px;
-          }
-      </style>
-        <div class="container">
-            <div class="card mb-3">
-                <h3 class="card-header">Welcome to Teambuilder Assistant</h3>
-                <div class="card-body row">
-                  <h6 class="card-subtitle text-muted">Evaluate Team</h6>
-                  <button type="button" id="start" class="btn btn-outline-primary">Evaluate</button>
-                </div>
-                <div class="card-body">
-                  <p class="card-text">The teambuilder assistant will compare your team based on model trained over 1000 recent 
-                      battles to see its adaptablilty with the current meta</p>
-                </div>
-                                  
-                <div class="card-footer text-muted">
-                    &copy;TheForeverLost
-                </div>
-              </div>              
-      </div>
-      <script src="popup.js"></script>
-      
+      <nav class="navbar">
+        <ul class="navbar-nav">
+          
+    
+          <li class="nav-item">
+            <a  class="nav-link" id="start">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">  <image id="image0" width="32" height="32" x="0" y="0"
+                  xlink:href="data:image/png;base64,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
+              NTo1MzozNCswMzowMDKruDEAAAAASUVORK5CYII=" />
+              </svg>
+
+              <span class="link-text">Cats</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <script src="jquery.js"></script>
+        <script src="popup.js"></script>
     </body>
   </html>

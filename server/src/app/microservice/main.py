@@ -310,11 +310,10 @@ def get_suggestion(team):
 
 def lambda_handler(event, context):
   try:
-    return get_suggestion(event["team"])
+    client = MongoClient(clientname, port , username=username,password=password)
+    print(event)
+    return get_suggestion(event)
   except:
-    event = json.loads(event["body"])
-    print(event["team"])
-    res = get_suggestion(event["team"])
     return {
         "statusCode": 200,
         "headers": {
@@ -326,6 +325,6 @@ def lambda_handler(event, context):
         "Access-Control-Allow-Methods": 'POST,GET,OPTIONS'
 
       },
-        "body": json.dumps(res),
+        "body": json.dumps({}),
         "isBase64Encoded": False
     }

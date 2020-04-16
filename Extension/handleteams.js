@@ -4,7 +4,7 @@ function onload(){
     
     let items = []
     x = x.split("]")
-    for (let index = 1; index < x.length-1; index++) {
+    for (let index = 1; index < x.length; index++) {
         let element = x[index];
         element = element.replace("beta|","")
         items.push(element.split("|")[0].toLowerCase())
