@@ -22,7 +22,7 @@ Before any sort of project it was essential to understand how the entire project
 
 dynamics of the game so this notebook extracts all possible data from smogon resources such as pokemon data , move data , battle records , image resources etc
 
-**Extension**
+**Teambuilder Extension**
 
 Chrome Extension that will be used as an assistant in teambuilder
 
@@ -32,7 +32,7 @@ This folder contains the container information as well source code for all the m
 
 To run the microservice at localhost along with a replica DB server :
 
-1.  Switch into the server directory
+1.  Switch into the src directory
 2. Run `docker-compose up`
 
 To build and push to aws lambda
@@ -53,4 +53,4 @@ This consists of a node environment where analysis of the pokemon showdown game 
 1. you can check out the various projects by smogon here<br>
    [![](https://avatars2.githubusercontent.com/u/5144145?s=200&v=4)](https://github.com/smogon) 
 
-2. For emulating the aws lambda function on my pc , I have used the [lambci/lamda:python3.6](https://hub.docker.com/r/lambci/lambda) docker image which is an abstraction of the aws lambda environment
+2. For emulating the aws lambda function on my pc , I have built the a docker image for the application using the [uwsgi-nginx-flask](https://hub.docker.com/r/tiangolo/uwsgi-nginx-flask/). This allows more freedon of customization than [lambci/lamda:python3.6](https://hub.docker.com/r/lambci/lambda) docker image which is an abstraction of the aws lambda environment though the latter gives a much more similar environment to aws lambda services

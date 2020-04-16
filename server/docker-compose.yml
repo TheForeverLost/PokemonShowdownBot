@@ -18,13 +18,9 @@ services:
             - ME_CONFIG_MONGODB_ADMINPASSWORD=example
             - ME_CONFIG_MONGODB_SERVER=mongodb
     lambda:
-        image: lambci/lambda:python3.6
+        image: uwsgi_base
         ports: 
-            - 9001:9001
-        environment: 
-            - DOCKER_LAMBDA_STAY_OPEN=1
-        volumes: 
-            - ./pythonlambda:/var/task
+            - 9000:80
 volumes:
     mongo-data:
         driver: local
