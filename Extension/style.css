@@ -14,6 +14,7 @@
     width: 200px;
     color: black;
     background-color: white;
+    font-family: 'Inconsolata', normal;
     margin: 0;
     padding: 0;
   }
@@ -33,6 +34,9 @@
   main {
     margin-left: 5rem;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    
   }
   
   .navbar {
@@ -217,3 +221,160 @@
   .solar #solarIcon {
     display: block;
   }
+
+  .container {
+    position: relative;
+    margin: 1em;
+    height: fit-content;
+    display: flex;
+    }
+
+    .card {
+    display: flex;
+    height: 350px;
+    width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: -0.75rem 0 1.75rem #0f1440;
+    /*   margin-left: -50px; */
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+    }
+
+    .card:not(:first-child) {
+        margin-left: -50px;
+    }
+
+    .card:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+    }
+
+    .card:hover ~ .card {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+    }
+
+    .title {
+    font-weight: 300;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    }
+
+    .bar {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    height: 5px;
+    width: 90%;
+    }
+
+    .emptybar {
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    height: 100%;
+    }
+
+    .filledbar {
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    width: 0px;
+    height: 100%;
+    background: rgb(0,154,217);
+    background: linear-gradient(90deg, rgba(15, 20, 64,1) 0%, rgba(13, 117, 91,1) 65%, rgba(199, 75, 8,1) 100%);
+    transition: 0.6s ease-out;
+    }
+
+    .card:hover .filledbar {
+    width: 100%;
+    transition: 0.4s ease-out;
+    }
+
+    .circle {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    top: 80px;
+    left: calc(50% - 60px);
+    }
+
+    .item {
+        position: relative;
+        display: flex;
+        margin-top: 0;
+    }
+
+    span {
+        margin-left: 4px;
+        margin-top: 10%;
+    }
+
+    .card:hover .stroke {
+    stroke-dashoffset: 100;
+    transition: 0.6s ease-out;
+    }
+    .picon {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+    }
+  
+    @keyframes ldio-ldqqvjo9wyo {
+      0% {
+        top: 56px;
+        left: 56px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+      }
+      100% {
+        top: 34px;
+        left: 34px;
+        width: 44px;
+        height: 44px;
+        opacity: 0;
+      }
+    }
+    
+    .ldio-ldqqvjo9wyo div {
+      position: absolute;
+      border-width: 44px;
+      border-style: solid;
+      opacity: 1;
+      border-radius: 50%;
+      animation: ldio-ldqqvjo9wyo 1s cubic-bezier(0,0.2,0.8,1) infinite;
+    }
+    
+    .ldio-ldqqvjo9wyo div:nth-child(1) {
+      border-color: #e90c59
+    }
+    
+    .ldio-ldqqvjo9wyo div:nth-child(2) {
+      border-color: #46dff0;
+      animation-delay: -0.5s;
+    }
+    
+    .loadingio-spinner-ripple-70r72ko75lc {
+      width: 200px;
+      height: 200px;
+      display: inline-block;
+      overflow: hidden;
+      background: #ffffff;
+    }
+    .ldio-ldqqvjo9wyo {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform: translateZ(0) scale(1);
+      backface-visibility: hidden;
+      transform-origin: 0 0; /* see note above */
+    }
+    .ldio-ldqqvjo9wyo div { box-sizing: content-box; }
