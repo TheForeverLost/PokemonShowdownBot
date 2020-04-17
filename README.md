@@ -24,7 +24,10 @@ dynamics of the game so this notebook extracts all possible data from smogon res
 
 **Teambuilder Extension**
 
-Chrome Extension that will be used as an assistant in teambuilder
+*Chrome Extension that will be used as an assistant in teambuilder*
+Recommendation of possible additions to team is fast but the the evaluation of team can take time ( ~40 secs) , currently the only format supported is gen8ou but more formats can easily be added.
+Recommendations and evaluations are made not only by game mechanics but also taking into consideration team data from over 1000 matches played in the past week
+![gif of extension](https://raw.githubusercontent.com/TheForeverLost/PokemonShowdownBot/master/teambuilder.gif)
 
 **Server**
 
