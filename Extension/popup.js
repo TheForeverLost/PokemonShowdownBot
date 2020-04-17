@@ -24,25 +24,9 @@ start.onclick = function(element) {
 
 chrome.runtime.onMessage.addListener((msg, sender, response) => {
   $('#databox').replaceWith('<main id="databox"> <div id="blank" class="container"></div><div id="result">Click on team to get started</div> </main>')
-  // First, validate the message's structure.
-  // if(msg["team"].length == 0){
-  //   param = {}
-  // }else{
-  //   tag = msg["team"][0]
-  //   for(let i = 1 ; i < msg["team"].length ; i++ ){
-  //     tag  = tag + "_" + msg["team"][i]
-  //   }
-  //   param={
-  //     team : tag
-  //   }
-  //   console.log(param)
-  // }
-  // $.get('http://localhost:9000',param, function(data){
-  //     console.log(data)
-  //     response(data)
-  // })
+  
   document.body.style.width = "400px"
-  document.body.style.height = "500px"
+  document.body.style.height = "600px"
   pokemonTeams={}
   msg["team"].forEach(element=>{
     if(element in Object.keys(pokemonTeams)){
@@ -56,15 +40,30 @@ chrome.runtime.onMessage.addListener((msg, sender, response) => {
     let teamdata = pokemonTeams[team]
     $("#blank").append( renderTemplate(teamdata) );
     document.getElementById(teamdata.name).onclick = function(){
-        Evaluate(teamdata.name)
+        Evaluate(teamdata)
     }
   })
   response({status:200})
 });
 
-function Evaluate(team){
-  console.log(team)
-  $('#result').replaceWith('<div class="loadingio-spinner-ripple-70r72ko75lc"><div class="ldio-ldqqvjo9wyo"><div></div><div></div></div></div>')
+function Evaluate(data){
+  console.log(data)
+  $('#result').replaceWith('<div id="result" class="loadingio-spinner-pulse-6wgmhr0kpgk"><div class="ldio-ckct7hxv908"><div></div><div></div><div></div></div></div>')
+  if(data["team"].length == 0){
+    param = {}
+  }else{
+    tag = data["team"][0]["species"]
+    for(let i = 1 ; i < data["team"].length ; i++ ){
+      tag  = tag + "_" + data["team"][i]["species"]
+    }
+    param={
+      team : tag
+    }
+    console.log(param)
+  }
+  $.get('http://localhost:9000',param, function(resultdata){
+      $('#result').replaceWith( renderResult(resultdata) )
+  })
 }
 
 function renderTemplate(teamdata){
@@ -81,4 +80,36 @@ function renderTemplate(teamdata){
       tempstart = tempstart + imagespan +pokeitem    
   });
   return tempstart + tempend
+}
+
+function renderResult(res){
+  let elemheader = '<div id="result" class="rcard"><image class="picon_large" src="POKEIMAGE"><div class="rcard_body">'
+  let elemspec = '<p>SITUATION <strong>POKEMON</strong> <strong>ABILITY</strong></p>'
+  let elemitem = '<p>suggested item : <strong>ITEM</strong></p>'
+  let elemmoves = '<p>suggested moves : <strong>MOVES</strong></p>'
+  let elemend = '</div></div>'
+  elemheader = elemheader.replace('POKEIMAGE',res.image2)
+  if(res.replace != "None"){
+    elemspec = elemspec.replace('SITUATION',res.replace +' ⇁')
+  }else{
+    elemspec = elemspec.replace('SITUATION','add')
+  }
+  elemspec = elemspec.replace('POKEMON',res.with.toUpperCase())
+  if (res.prefer_ability != "None") {
+    elemspec = elemspec.replace('ABILITY','('+res.prefer_ability+')')
+  } else {
+    elemspec = elemspec.replace('ABILITY','')
+  }
+  if (res.prefer_item != "None") {
+    elemitem = elemitem.replace('ITEM',res.prefer_item)
+  } else {
+    elemitem = ''
+  }
+  let moves = ''
+  res.prefer_moves.forEach(element=>{
+    moves = moves + element + ','
+  })
+  moves = moves.slice(0,-1)
+  elemmoves = elemmoves.replace('MOVES',moves)
+  return elemheader + elemspec + elemitem + elemmoves + elemend
 }

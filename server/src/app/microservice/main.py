@@ -291,7 +291,7 @@ def partner_suggestion(team):
       max = total
       maxpoke = c
   return {
-      "return" : "None",
+      "replace" : "None",
       "with": maxpoke,
       "image2" : getTeamData( "image" , "name" , maxpoke),
       "prefer_ability" : getTeamData( "prefer_ability" , "name" , maxpoke) , 
@@ -303,7 +303,7 @@ def foundation():
   lis = [x["name"] for x in teamdata.find().sort([("popularity",-1 ),("Total",-1)])[:10] ]
   shuffle(lis)
   return {
-      "return" : "None",
+      "replace" : "None",
       "with": lis[0],
       "image2" : getTeamData( "image" , "name" , lis[0]),
       "prefer_ability" : getTeamData( "prefer_ability" , "name" , lis[0]) , 
@@ -320,7 +320,6 @@ def get_suggestion(team):
     return foundation()
 
 def lambda_handler(event, context):
-  try:
     flag = True
     while(flag):
       try:
@@ -336,19 +335,4 @@ def lambda_handler(event, context):
 
     print(event)
     return get_suggestion(event)
-  except:
-    return {
-        "statusCode": 200,
-        "headers": {
-
-        "Access-Control-Allow-Headers": 'Content-Type,X-Amz-Date,Authorization,X-Api-Key,x-requested-with',
-
-        "Access-Control-Allow-Origin": '*',
-
-        "Access-Control-Allow-Methods": 'POST,GET,OPTIONS'
-
-      },
-        "body": json.dumps({}),
-        "isBase64Encoded": False
-    }
   
