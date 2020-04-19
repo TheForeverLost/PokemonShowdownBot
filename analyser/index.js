@@ -1,6 +1,6 @@
 const battlemoves = require("./battlemoves").BattleMovedex
 const smogon = require("@smogon/calc")
-const gen8ou = require('@pokemon-showdown/sets').forFormat("gen8ou")
+const gen8ou = require('@pokemon-showdown/sets').forGen(8)
 const Pokemon = smogon.Pokemon
 const Move = smogon.Move
 
@@ -9,92 +9,207 @@ const Move = smogon.Move
 const Pokedex = smogon.SPECIES
 const Movset = smogon.MOVES
 const Items = smogon.ITEMS
+let setdex = {}
 
-class BattleSituation{
-    
-    constructor(){
-        this.team1 = []
-        this.team2 = []
-        this.user = null
-        this.enemy = null
-        this.field = smogon.Field()
-        
-    }
+let field
+let data = []
+let userteam = []
+let enemyteam = []
+function calculateMovesOfAttacker(gen, attacker, defender, field) {
+	var results = [];
+	for (var i = 0; i < 4; i++) {
+        results[i] = smogon.calculate(gen, attacker, defender, attacker.moves[i],field);
+	}
+	return results;
+}
 
-    addToTeam1(pokemon,options) {
-        if(this.team1.length < 6){
-            this.team1.push(new Pokemon(8,pokemon,options))
-        }
-    }
-    addToTeam2(pokemon,options) {
-        if(this.team2.length < 6){
-            this.team2.push(new Pokemon(8,pokemon,options))
-        }
-    }
-    
-    adjust(field){
-        this.field = field
-    }
-    
-    chooseTeam1(pokemon){
-        this.team1.forEach((element)=>{
-            if (element.name == pokemon){
-                console.log("I chose you , ",pokemon)
-                this.user = element
-                return
+function getSetOptions(){
+    let setOptions = []
+    pokenames = Object.keys(setdex)
+    pokenames.forEach(pokemon => {
+        setnames = Object.keys(setdex[pokemon])
+        setnames.forEach(element=>{
+            try{
+                setOptions.push(createPokemon({
+                    species : pokemon ,
+                    ability : setdex[pokemon][element].ability ,
+                    item : setdex[pokemon][element].item ,
+                    moves : setdex[pokemon][element].moves ,
+                    nature : setdex[pokemon][element].nature ,
+                    evs : setdex[pokemon][element].evs
+                }))
+            }catch(error){
+                setOptions.push(createPokemon({
+                    species : pokemon+'-Shield' ,
+                    ability : setdex[pokemon][element].ability ,
+                    item : setdex[pokemon][element].item ,
+                    moves : setdex[pokemon][element].moves ,
+                    nature : setdex[pokemon][element].nature ,
+                    evs : setdex[pokemon][element].evs
+                }))
+                setOptions.push(createPokemon({
+                    species : pokemon+'-Blade' ,
+                    ability : setdex[pokemon][element].ability ,
+                    item : setdex[pokemon][element].item ,
+                    moves : setdex[pokemon][element].moves ,
+                    nature : setdex[pokemon][element].nature ,
+                    evs : setdex[pokemon][element].evs
+                }))
             }
         })
-    }
+    })
+    return setOptions 
+}
 
-    chooseTeam2(pokemon){
-        this.team2.forEach((element)=>{
-            if (element.name == pokemon){
-                this.enemy = element
-                console.log("I chose you , ",pokemon)
-                return
+function createPokemon(setdata){
+        return new Pokemon(8 , setdata.species , {
+            level : 100 ,
+            ability : setdata.ability ,
+            item : setdata.item ,
+            moves : setdata.moves ,
+            nature : setdata.nature ,
+            evs : setdata.evs 
+        })    
+}
+
+function generateResult(){
+    var selectedTiers = ['OU'];
+	var setOptions = getSetOptions();
+    var dataSet = [];
+    userteam.forEach(user=>{
+        setOptions.forEach(oppo=>{
+            if(enemyteam.includes(oppo.species.name)){
+                let field = new smogon.Field( {
+                    gameType : "Singles",
+                    weather : autosetWeather(user.ability) != "" ? autosetWeather(user.ability) : (autosetWeather(oppo.ability) != ""  ? autosetWeather(oppo.ability) : '') 
+                } )
+                let damageResults = []
+                
+                for (var i = 0; i < 4; i++) {
+                        damageResults[i] = smogon.calculate(8, user , oppo, new Move(8 , user.moves[i]),field); 
+                }
+                var attacker = damageResults[0].attacker;
+                var defender = damageResults[0].defender;
+                let highestDamage = -1;
+                let data = []
+                var result, minDamage, maxDamage, minPercentage, maxPercentage, minPixels, maxPixels;
+                for (var n = 0; n < 4; n++) {
+					result = damageResults[n];
+					minDamage = result.damage[0] 
+					maxDamage = result.damage[result.damage.length - 1]
+					minPercentage = Math.floor(minDamage * 1000 / defender.maxHP()) / 10;
+					maxPercentage = Math.floor(maxDamage * 1000 / defender.maxHP()) / 10;
+					minPixels = Math.floor(minDamage * 48 / defender.maxHP());
+					maxPixels = Math.floor(maxDamage * 48 / defender.maxHP());
+					if (maxDamage > highestDamage) {
+						highestDamage = maxDamage;
+						while (data.length > 0) {
+							data.pop();
+						}
+						data.push(result)
+					}
+                }
+                data.forEach(res=>{
+                    dataSet.push(res)
+                })
             }
+            
         })
-    }
+    })
+    return dataSet
+}
 
-    getBestMove(){
-        let moves = []
-        gen8ou.then((setdata)=>{
-            if(this.user.name in Object.keys(setdata["smogon.com/dex"])){
-                moves = setdata["smogon.com/dex"][this.user.name][Object.keys(setdata["smogon.com/dex"][this.user.name])[0]]["moves"]
-            }else{
-                moves = setdata["smogon.com/stats"][this.user.name][Object.keys(setdata["smogon.com/stats"][this.user.name])[0]]["moves"]
-            }
-            let damages = {}
-            moves.forEach((element)=>{
-                console.log(element,this.average(smogon.calculate(8,this.user,this.enemy,new Move(8,element)).damage))
-            })
-            return "success"
-        }).catch((err)=>{
-            console.log(err)
-        })
-        
+function PokemonTeams(){
+    userteam = []
+    enemyteam = []
+    alloption = getSetOptions()
+    for (let index = 0; index < 6; index++) {
+        userteam.push(alloption[Math.floor(Math.random() * alloption.length)])
     }
-
-    average(damages){
-        let sum = 0
-        damages.forEach(element => {
-            sum += element
-        });
-        return sum/damages.length
+    pokenames = Object.keys(setdex) 
+    for (let index = 0; index < 6; index++) {
+        enemyteam.push(pokenames[Math.floor(Math.random() * pokenames.length)])
     }
 }
 
-bs = new BattleSituation()
-bs.addToTeam1('Gengar', {
-    item: 'Choice Specs',
-    boosts: {spa: 3},
-  })
+function autosetWeather(ability) {
+    newWeather = ""
+    switch (ability) {
+	case "Drought":
+		lastAutoWeather = "Sun";
+		break;
+	case "Drizzle":
+		lastAutoWeather = "Rain";
+		break;
+	case "Sand Stream":
+		lastAutoWeather = "Sand";
+		break;
+	case "Snow Warning":
+		lastAutoWeather = "Hail";
+		break;
+	case "Desolate Land":
+		lastAutoWeather = "Harsh Sunshine";
+		break;
+	case "Primordial Sea":
+		lastAutoWeather = "Heavy Rain";
+		break;
+	case "Delta Stream":
+		lastAutoWeather = "Strong Winds";
+		break;
+	default:
+		lastAutoWeather = "";
+		break;
+    }
+    return lastAutoWeather
+}
 
-bs.addToTeam2('Clefable', {
-    item: 'Leftovers',
-    boosts: {spd: 5,def : 5},
+function avg(arr){
+    let sum = 0
+    arr.forEach(elem=>{
+        sum += elem
+    })
+    return sum/arr.length
+}
+
+
+gen8ou.then((data)=>{
+    Object.keys(data).forEach(format=>{
+        if(format == 'gen8ou' || format == 'gen8uu' || format == 'gen8ru' || format == 'gen8nu' || format == 'gen8pu' || format == 'gen8lc' ){
+            let dataform = data[format]
+            Object.keys(dataform).forEach(element => {
+                let databox = dataform[element]
+                Object.keys(databox).forEach(pokekey=>{
+                    if (Object.keys(setdex).includes(pokekey)) {
+                    Object.keys(databox[pokekey]).forEach(set=>{
+                        setdex[pokekey][set] = databox[pokekey][set]
+                    })  
+                    }else{
+                        setdex[pokekey] = databox[pokekey]
+                    } 
+                })
+            });
+            }
+    })
+    PokemonTeams()
+    console.log("\nyour team\n-------\n")
+    userteam.forEach(member=>{
+        console.log(member.name)
+    })
+    console.log("\nopponent team\n-------\n")
+    enemyteam.forEach(member=>{
+        console.log(member)
+    })
+    console.log("\n");
+    
+    const analysis = (generateResult())
+    analysis.forEach(result=>{
+        try{
+            console.log(result.attacker.name , " uses " ,result.move.originalName ,' on ' ,result.defender.name , " dealing " , avg(result.damage)) ;
+        }catch(error){
+
+        }
+    })
+   
+}).catch(error=>{
+    console.log(error);  
 })
-
-bs.chooseTeam1("Gengar")
-bs.chooseTeam2("Clefable")
-bs.getBestMove()
