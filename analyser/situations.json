@@ -1,0 +1,453 @@
+
+
+{
+    "situations": [
+       {
+          "weather": "Sun (5 or 8 turns)",
+          "userStatus": [],
+          "oppoStatus": [],
+          "userTeam": [
+             "Ninetales L84\nHP: 100.0% (259/259)\nAbility: Drought / Item: Focus Sash\nAtk 132 / Def 174 / SpA 184 / SpD 216 / Spe 216\n• Nasty Plot\n• Solar Beam\n• Will-O-Wisp\n• Fire Blast",
+             "Eiscue L88\nHP: 100.0% (272/272)\nAbility: Ice Face / Item: Salac Berry\nAtk 191 / Def 244 / SpA 165 / SpD 209 / Spe 138\n• Belly Drum\n• Substitute\n• Liquidation\n• Icicle Crash",
+             "Eldegoss L86\nHP: 100.0% (243/243)\nAbility: Regenerator / Item: Leftovers\nAtk 91 / Def 204 / SpA 187 / SpD 256 / Spe 152\n• Leech Seed\n• Sleep Powder\n• Pollen Puff\n• Energy Ball",
+             "Crobat L80\nHP: 100.0% (267/267)\nAbility: Infiltrator / Item: Heavy-Duty Boots\nAtk 190 / Def 174 / SpA 158 / SpD 174 / Spe 254\n• Defog\n• Toxic\n• Brave Bird\n• Roost",
+             "Liepard L88\nHP: 100.0% (256/256)\nAbility: Prankster / Item: Leftovers\nAtk 205 / Def 138 / SpA 205 / SpD 138 / Spe 237\n• Thunder Wave\n• U-turn\n• Copycat\n• Knock Off",
+             "Drampa L86\nHP: 100.0% (274/274)\nAbility: Sap Sipper / Item: Leftovers\nAtk 108 / Def 195 / SpA 281 / SpD 206 / Spe 111\n• Roost\n• Thunderbolt\n• Draco Meteor\n• Hyper Voice"
+          ],
+          "oppoTeam": [
+             "Mewtwo L72\nHP: 100%\nAbility: Unnerve\nSpe 192 to 229 (before items/abilities/modifiers)"
+          ],
+          "userCurr": "Ninetales L84\nHP: 100.0% (259/259)\nAbility: Drought\nItem: Focus Sash\nAtk 132 / Def 174 / SpA 184 / SpD 216 / Spe 216",
+          "oppoCurr": "Mewtwo L72\nHP: 100%\nAbility: Unnerve\nSpe 192 to 229 (before items/abilities/modifiers)",
+          "userMoves": [
+             "Nasty Plot\nAccuracy: can't miss\nRaises the user's Special Attack by 2 stages.",
+             "Solar Beam\nBase power: 120\nAccuracy: 100%\nThis attack charges on the first turn and executes on the second. Power is halved if the weather is Hail, Primordial Sea, Rain Dance, or Sandstorm and the user is not holding Utility Umbrella. If the user is holding a Power Herb or the weather is Desolate Land or Sunny Day, the move completes in one turn. If the user is holding Utility Umbrella and the weather is Desolate Land or Sunny Day, the move still requires a turn to charge.",
+             "Will-O-Wisp\nAccuracy: 85%\nBurns the target.",
+             "Fire Blast\nBase power: 110\nAccuracy: 85%\nHas a 10% chance to burn the target."
+          ],
+          "userMaxmoves": []
+       },
+       {
+          "weather": "Sun (5 or 8 turns)",
+          "userStatus": [],
+          "oppoStatus": [],
+          "userTeam": [
+             "Ninetales L84\nHP: 100.0% (259/259)\nAbility: Drought / Item: Focus Sash\nAtk 132 / Def 174 / SpA 184 / SpD 216 / Spe 216\n• Nasty Plot\n• Solar Beam\n• Will-O-Wisp\n• Fire Blast",
+             "Eiscue L88\nHP: 100.0% (272/272)\nAbility: Ice Face / Item: Salac Berry\nAtk 191 / Def 244 / SpA 165 / SpD 209 / Spe 138\n• Belly Drum\n• Substitute\n• Liquidation\n• Icicle Crash",
+             "Eldegoss L86\nHP: 100.0% (243/243)\nAbility: Regenerator / Item: Leftovers\nAtk 91 / Def 204 / SpA 187 / SpD 256 / Spe 152\n• Leech Seed\n• Sleep Powder\n• Pollen Puff\n• Energy Ball",
+             "Crobat L80\nHP: 100.0% (267/267)\nAbility: Infiltrator / Item: Heavy-Duty Boots\nAtk 190 / Def 174 / SpA 158 / SpD 174 / Spe 254\n• Defog\n• Toxic\n• Brave Bird\n• Roost",
+             "Liepard L88\nHP: 100.0% (256/256)\nAbility: Prankster / Item: Leftovers\nAtk 205 / Def 138 / SpA 205 / SpD 138 / Spe 237\n• Thunder Wave\n• U-turn\n• Copycat\n• Knock Off",
+             "Drampa L86\nHP: 100.0% (274/274)\nAbility: Sap Sipper / Item: Leftovers\nAtk 108 / Def 195 / SpA 281 / SpD 206 / Spe 111\n• Roost\n• Thunderbolt\n• Draco Meteor\n• Hyper Voice"
+          ],
+          "oppoTeam": [
+             "Mewtwo L72\nHP: 100%\nAbility: Unnerve\nSpe 192 to 229 (before items/abilities/modifiers)"
+          ],
+          "userCurr": "Ninetales L84\nHP: 100.0% (259/259)\nAbility: Drought\nItem: Focus Sash\nAtk 132 / Def 174 / SpA 184 / SpD 216 / Spe 216",
+          "oppoCurr": "Mewtwo L72\nHP: 100%\nAbility: Unnerve\nSpe 192 to 229 (before items/abilities/modifiers)",
+          "userMoves": [
+             "Nasty Plot\nAccuracy: can't miss\nRaises the user's Special Attack by 2 stages.",
+             "Solar Beam\nBase power: 120\nAccuracy: 100%\nThis attack charges on the first turn and executes on the second. Power is halved if the weather is Hail, Primordial Sea, Rain Dance, or Sandstorm and the user is not holding Utility Umbrella. If the user is holding a Power Herb or the weather is Desolate Land or Sunny Day, the move completes in one turn. If the user is holding Utility Umbrella and the weather is Desolate Land or Sunny Day, the move still requires a turn to charge.",
+             "Will-O-Wisp\nAccuracy: 85%\nBurns the target.",
+             "Fire Blast\nBase power: 110\nAccuracy: 85%\nHas a 10% chance to burn the target."
+          ],
+          "userMaxmoves": []
+       },
+       {
+          "weather": "Sun (4 or 7 turns)",
+          "userStatus": [
+             "2× SpA"
+          ],
+          "oppoStatus": [],
+          "userTeam": [
+             "Ninetales L84\nHP: 100.0% (259/259)\nAbility: Drought / Item: Focus Sash\nAtk 132 / Def 174 / SpA 184 / SpD 216 / Spe 216\n• Nasty Plot\n• Solar Beam\n• Will-O-Wisp\n• Fire Blast",
+             "Eiscue L88\nHP: 100.0% (272/272)\nAbility: Ice Face / Item: Salac Berry\nAtk 191 / Def 244 / SpA 165 / SpD 209 / Spe 138\n• Belly Drum\n• Substitute\n• Liquidation\n• Icicle Crash",
+             "Eldegoss L86\nHP: 100.0% (243/243)\nAbility: Regenerator / Item: Leftovers\nAtk 91 / Def 204 / SpA 187 / SpD 256 / Spe 152\n• Leech Seed\n• Sleep Powder\n• Pollen Puff\n• Energy Ball",
+             "Crobat L80\nHP: 100.0% (267/267)\nAbility: Infiltrator / Item: Heavy-Duty Boots\nAtk 190 / Def 174 / SpA 158 / SpD 174 / Spe 254\n• Defog\n• Toxic\n• Brave Bird\n• Roost",
+             "Liepard L88\nHP: 100.0% (256/256)\nAbility: Prankster / Item: Leftovers\nAtk 205 / Def 138 / SpA 205 / SpD 138 / Spe 237\n• Thunder Wave\n• U-turn\n• Copycat\n• Knock Off",
+             "Drampa L86\nHP: 100.0% (274/274)\nAbility: Sap Sipper / Item: Leftovers\nAtk 108 / Def 195 / SpA 281 / SpD 206 / Spe 111\n• Roost\n• Thunderbolt\n• Draco Meteor\n• Hyper Voice"
+          ],
+          "oppoTeam": [
+             "Mewtwo L72\nHP: 77%\nAbility: Unnerve\nItem: Leftovers\nSpe 192 to 229 (before items/abilities/modifiers)\n• Nasty Plot (31/32)"
+          ],
+          "userCurr": "Ninetales L84\nHP: 100.0% (259/259)\nAbility: Drought\nItem: Focus Sash\nAtk 132 / Def 174 / SpA 184 / SpD 216 / Spe 216\n• Solar Beam (15/16)",
+          "oppoCurr": "Mewtwo L72\nHP: 77%\nAbility: Unnerve\nItem: Leftovers\nSpe 192 to 229 (before items/abilities/modifiers)\n• Nasty Plot (31/32)",
+          "userMoves": [
+             "Nasty Plot\nAccuracy: can't miss\nRaises the user's Special Attack by 2 stages.",
+             "Solar Beam\nBase power: 120\nAccuracy: 100%\nThis attack charges on the first turn and executes on the second. Power is halved if the weather is Hail, Primordial Sea, Rain Dance, or Sandstorm and the user is not holding Utility Umbrella. If the user is holding a Power Herb or the weather is Desolate Land or Sunny Day, the move completes in one turn. If the user is holding Utility Umbrella and the weather is Desolate Land or Sunny Day, the move still requires a turn to charge.",
+             "Will-O-Wisp\nAccuracy: 85%\nBurns the target.",
+             "Fire Blast\nBase power: 110\nAccuracy: 85%\nHas a 10% chance to burn the target."
+          ],
+          "userMaxmoves": []
+       },
+       {
+          "weather": "Sun (3 or 6 turns)",
+          "userStatus": [
+             "BRN",
+             "3× SpA"
+          ],
+          "oppoStatus": [],
+          "userTeam": [
+             "Ninetales L84\nHP: 100.0% (259/259)\nAbility: Drought / Item: Focus Sash\nAtk 132 / Def 174 / SpA 184 / SpD 216 / Spe 216\n• Nasty Plot\n• Solar Beam\n• Will-O-Wisp\n• Fire Blast",
+             "Eiscue L88\nHP: 100.0% (272/272)\nAbility: Ice Face / Item: Salac Berry\nAtk 191 / Def 244 / SpA 165 / SpD 209 / Spe 138\n• Belly Drum\n• Substitute\n• Liquidation\n• Icicle Crash",
+             "Eldegoss L86\nHP: 100.0% (243/243)\nAbility: Regenerator / Item: Leftovers\nAtk 91 / Def 204 / SpA 187 / SpD 256 / Spe 152\n• Leech Seed\n• Sleep Powder\n• Pollen Puff\n• Energy Ball",
+             "Crobat L80\nHP: 100.0% (267/267)\nAbility: Infiltrator / Item: Heavy-Duty Boots\nAtk 190 / Def 174 / SpA 158 / SpD 174 / Spe 254\n• Defog\n• Toxic\n• Brave Bird\n• Roost",
+             "Liepard L88\nHP: 100.0% (256/256)\nAbility: Prankster / Item: Leftovers\nAtk 205 / Def 138 / SpA 205 / SpD 138 / Spe 237\n• Thunder Wave\n• U-turn\n• Copycat\n• Knock Off",
+             "Drampa L86\nHP: 100.0% (274/274)\nAbility: Sap Sipper / Item: Leftovers\nAtk 108 / Def 195 / SpA 281 / SpD 206 / Spe 111\n• Roost\n• Thunderbolt\n• Draco Meteor\n• Hyper Voice"
+          ],
+          "oppoTeam": [
+             "Mewtwo L72\nHP: 77% BRN\nAbility: Unnerve\nItem: Leftovers\nSpe 192 to 229 (before items/abilities/modifiers)\n• Nasty Plot (30/32)"
+          ],
+          "userCurr": "Ninetales L84\nHP: 100.0% (259/259)\nAbility: Drought\nItem: Focus Sash\nAtk 132 / Def 174 / SpA 184 / SpD 216 / Spe 216\n• Solar Beam (15/16)\n• Will-O-Wisp (23/24)",
+          "oppoCurr": "Mewtwo L72\nHP: 77% BRN\nAbility: Unnerve\nItem: Leftovers\nSpe 192 to 229 (before items/abilities/modifiers)\n• Nasty Plot (30/32)",
+          "userMoves": [
+             "Nasty Plot\nAccuracy: can't miss\nRaises the user's Special Attack by 2 stages.",
+             "Solar Beam\nBase power: 120\nAccuracy: 100%\nThis attack charges on the first turn and executes on the second. Power is halved if the weather is Hail, Primordial Sea, Rain Dance, or Sandstorm and the user is not holding Utility Umbrella. If the user is holding a Power Herb or the weather is Desolate Land or Sunny Day, the move completes in one turn. If the user is holding Utility Umbrella and the weather is Desolate Land or Sunny Day, the move still requires a turn to charge.",
+             "Will-O-Wisp\nAccuracy: 85%\nBurns the target.",
+             "Fire Blast\nBase power: 110\nAccuracy: 85%\nHas a 10% chance to burn the target."
+          ],
+          "userMaxmoves": []
+       },
+       {
+          "weather": "Sun (2 or 5 turns)",
+          "userStatus": [
+             "BRN",
+             "4× SpA"
+          ],
+          "oppoStatus": [],
+          "userTeam": [
+             "Ninetales L84\nHP: 100.0% (259/259)\nAbility: Drought / Item: Focus Sash\nAtk 132 / Def 174 / SpA 184 / SpD 216 / Spe 216\n• Nasty Plot\n• Solar Beam\n• Will-O-Wisp\n• Fire Blast",
+             "Eiscue L88\nHP: 100.0% (272/272)\nAbility: Ice Face / Item: Salac Berry\nAtk 191 / Def 244 / SpA 165 / SpD 209 / Spe 138\n• Belly Drum\n• Substitute\n• Liquidation\n• Icicle Crash",
+             "Eldegoss L86\nHP: 100.0% (243/243)\nAbility: Regenerator / Item: Leftovers\nAtk 91 / Def 204 / SpA 187 / SpD 256 / Spe 152\n• Leech Seed\n• Sleep Powder\n• Pollen Puff\n• Energy Ball",
+             "Crobat L80\nHP: 100.0% (267/267)\nAbility: Infiltrator / Item: Heavy-Duty Boots\nAtk 190 / Def 174 / SpA 158 / SpD 174 / Spe 254\n• Defog\n• Toxic\n• Brave Bird\n• Roost",
+             "Liepard L88\nHP: 100.0% (256/256)\nAbility: Prankster / Item: Leftovers\nAtk 205 / Def 138 / SpA 205 / SpD 138 / Spe 237\n• Thunder Wave\n• U-turn\n• Copycat\n• Knock Off",
+             "Drampa L86\nHP: 100.0% (274/274)\nAbility: Sap Sipper / Item: Leftovers\nAtk 108 / Def 195 / SpA 281 / SpD 206 / Spe 111\n• Roost\n• Thunderbolt\n• Draco Meteor\n• Hyper Voice"
+          ],
+          "oppoTeam": [
+             "Mewtwo L72\nHP: 13% BRN\nAbility: Unnerve\nItem: Leftovers\nSpe 192 to 229 (before items/abilities/modifiers)\n• Nasty Plot (29/32)"
+          ],
+          "userCurr": "Ninetales L84\nHP: 100.0% (259/259)\nAbility: Drought\nItem: Focus Sash\nAtk 132 / Def 174 / SpA 184 / SpD 216 / Spe 216\n• Solar Beam (15/16)\n• Will-O-Wisp (23/24)\n• Fire Blast (7/8)",
+          "oppoCurr": "Mewtwo L72\nHP: 13% BRN\nAbility: Unnerve\nItem: Leftovers\nSpe 192 to 229 (before items/abilities/modifiers)\n• Nasty Plot (29/32)",
+          "userMoves": [
+             "Nasty Plot\nAccuracy: can't miss\nRaises the user's Special Attack by 2 stages.",
+             "Solar Beam\nBase power: 120\nAccuracy: 100%\nThis attack charges on the first turn and executes on the second. Power is halved if the weather is Hail, Primordial Sea, Rain Dance, or Sandstorm and the user is not holding Utility Umbrella. If the user is holding a Power Herb or the weather is Desolate Land or Sunny Day, the move completes in one turn. If the user is holding Utility Umbrella and the weather is Desolate Land or Sunny Day, the move still requires a turn to charge.",
+             "Will-O-Wisp\nAccuracy: 85%\nBurns the target.",
+             "Fire Blast\nBase power: 110\nAccuracy: 85%\nHas a 10% chance to burn the target."
+          ],
+          "userMaxmoves": []
+       },
+       {
+          "weather": "Sun (2 or 5 turns)",
+          "userStatus": [
+             "BRN",
+             "4× SpA"
+          ],
+          "oppoStatus": [],
+          "userTeam": [
+             "Ninetales L84\nHP: 100.0% (259/259)\nAbility: Drought / Item: Focus Sash\nAtk 132 / Def 174 / SpA 184 / SpD 216 / Spe 216\n• Nasty Plot\n• Solar Beam\n• Will-O-Wisp\n• Fire Blast",
+             "Eiscue L88\nHP: 100.0% (272/272)\nAbility: Ice Face / Item: Salac Berry\nAtk 191 / Def 244 / SpA 165 / SpD 209 / Spe 138\n• Belly Drum\n• Substitute\n• Liquidation\n• Icicle Crash",
+             "Eldegoss L86\nHP: 100.0% (243/243)\nAbility: Regenerator / Item: Leftovers\nAtk 91 / Def 204 / SpA 187 / SpD 256 / Spe 152\n• Leech Seed\n• Sleep Powder\n• Pollen Puff\n• Energy Ball",
+             "Crobat L80\nHP: 100.0% (267/267)\nAbility: Infiltrator / Item: Heavy-Duty Boots\nAtk 190 / Def 174 / SpA 158 / SpD 174 / Spe 254\n• Defog\n• Toxic\n• Brave Bird\n• Roost",
+             "Liepard L88\nHP: 100.0% (256/256)\nAbility: Prankster / Item: Leftovers\nAtk 205 / Def 138 / SpA 205 / SpD 138 / Spe 237\n• Thunder Wave\n• U-turn\n• Copycat\n• Knock Off",
+             "Drampa L86\nHP: 100.0% (274/274)\nAbility: Sap Sipper / Item: Leftovers\nAtk 108 / Def 195 / SpA 281 / SpD 206 / Spe 111\n• Roost\n• Thunderbolt\n• Draco Meteor\n• Hyper Voice"
+          ],
+          "oppoTeam": [
+             "Mewtwo L72\nHP: 13% BRN\nAbility: Unnerve\nItem: Leftovers\nSpe 192 to 229 (before items/abilities/modifiers)\n• Nasty Plot (29/32)"
+          ],
+          "userCurr": "Ninetales L84\nHP: 100.0% (259/259)\nAbility: Drought\nItem: Focus Sash\nAtk 132 / Def 174 / SpA 184 / SpD 216 / Spe 216\n• Solar Beam (15/16)\n• Will-O-Wisp (23/24)\n• Fire Blast (7/8)",
+          "oppoCurr": "Mewtwo L72\nHP: 13% BRN\nAbility: Unnerve\nItem: Leftovers\nSpe 192 to 229 (before items/abilities/modifiers)\n• Nasty Plot (29/32)",
+          "userMoves": [
+             "Nasty Plot\nAccuracy: can't miss\nRaises the user's Special Attack by 2 stages.",
+             "Solar Beam\nBase power: 120\nAccuracy: 100%\nThis attack charges on the first turn and executes on the second. Power is halved if the weather is Hail, Primordial Sea, Rain Dance, or Sandstorm and the user is not holding Utility Umbrella. If the user is holding a Power Herb or the weather is Desolate Land or Sunny Day, the move completes in one turn. If the user is holding Utility Umbrella and the weather is Desolate Land or Sunny Day, the move still requires a turn to charge.",
+             "Will-O-Wisp\nAccuracy: 85%\nBurns the target.",
+             "Fire Blast\nBase power: 110\nAccuracy: 85%\nHas a 10% chance to burn the target."
+          ],
+          "userMaxmoves": []
+       },
+       {
+          "weather": "Sun (1 or 4 turns)",
+          "userStatus": [
+             "BRN",
+             "4× SpA"
+          ],
+          "oppoStatus": [
+             "2× SpA"
+          ],
+          "userTeam": [
+             "Ninetales L84\nHP: 0.4% (1/259)\nAbility: Drought / Item: None (Focus Sash was consumed)\nAtk 132 / Def 174 / SpA 368 / SpD 216 / Spe 216\n• Nasty Plot\n• Solar Beam\n• Will-O-Wisp\n• Fire Blast",
+             "Eiscue L88\nHP: 100.0% (272/272)\nAbility: Ice Face / Item: Salac Berry\nAtk 191 / Def 244 / SpA 165 / SpD 209 / Spe 138\n• Belly Drum\n• Substitute\n• Liquidation\n• Icicle Crash",
+             "Eldegoss L86\nHP: 100.0% (243/243)\nAbility: Regenerator / Item: Leftovers\nAtk 91 / Def 204 / SpA 187 / SpD 256 / Spe 152\n• Leech Seed\n• Sleep Powder\n• Pollen Puff\n• Energy Ball",
+             "Crobat L80\nHP: 100.0% (267/267)\nAbility: Infiltrator / Item: Heavy-Duty Boots\nAtk 190 / Def 174 / SpA 158 / SpD 174 / Spe 254\n• Defog\n• Toxic\n• Brave Bird\n• Roost",
+             "Liepard L88\nHP: 100.0% (256/256)\nAbility: Prankster / Item: Leftovers\nAtk 205 / Def 138 / SpA 205 / SpD 138 / Spe 237\n• Thunder Wave\n• U-turn\n• Copycat\n• Knock Off",
+             "Drampa L86\nHP: 100.0% (274/274)\nAbility: Sap Sipper / Item: Leftovers\nAtk 108 / Def 195 / SpA 281 / SpD 206 / Spe 111\n• Roost\n• Thunderbolt\n• Draco Meteor\n• Hyper Voice"
+          ],
+          "oppoTeam": [
+             "Mewtwo L72\nHP: 13% BRN\nAbility: Unnerve\nItem: Leftovers\nSpe 192 to 229 (before items/abilities/modifiers)\n• Nasty Plot (29/32)\n• Psystrike (15/16)"
+          ],
+          "userCurr": "Ninetales L84\nHP: 0.4% (1/259)\nAbility: Drought\nItem: None (Focus Sash was consumed)\nAtk 132 / Def 174 / SpA 184 / SpD 216 / Spe 216\n(After stat modifiers:)\nAtk 132 / Def 174 / SpA 368 / SpD 216 / Spe 216\n• Solar Beam (15/16)\n• Will-O-Wisp (23/24)\n• Fire Blast (7/8)\n• Nasty Plot (31/32)",
+          "oppoCurr": "Mewtwo L72\nHP: 13% BRN\nAbility: Unnerve\nItem: Leftovers\nSpe 192 to 229 (before items/abilities/modifiers)\n• Nasty Plot (29/32)\n• Psystrike (15/16)",
+          "userMoves": [
+             "Nasty Plot\nAccuracy: can't miss\nRaises the user's Special Attack by 2 stages.",
+             "Solar Beam\nBase power: 120\nAccuracy: 100%\nThis attack charges on the first turn and executes on the second. Power is halved if the weather is Hail, Primordial Sea, Rain Dance, or Sandstorm and the user is not holding Utility Umbrella. If the user is holding a Power Herb or the weather is Desolate Land or Sunny Day, the move completes in one turn. If the user is holding Utility Umbrella and the weather is Desolate Land or Sunny Day, the move still requires a turn to charge.",
+             "Will-O-Wisp\nAccuracy: 85%\nBurns the target.",
+             "Fire Blast\nBase power: 110\nAccuracy: 85%\nHas a 10% chance to burn the target."
+          ],
+          "userMaxmoves": []
+       },
+       {
+          "weather": "Sun (1 or 4 turns)",
+          "userStatus": [
+             "BRN",
+             "4× SpA"
+          ],
+          "oppoStatus": [
+             "2× SpA"
+          ],
+          "userTeam": [
+             "Ninetales L84\nHP: 0.4% (1/259)\nAbility: Drought / Item: None (Focus Sash was consumed)\nAtk 132 / Def 174 / SpA 368 / SpD 216 / Spe 216\n• Nasty Plot\n• Solar Beam\n• Will-O-Wisp\n• Fire Blast",
+             "Eiscue L88\nHP: 100.0% (272/272)\nAbility: Ice Face / Item: Salac Berry\nAtk 191 / Def 244 / SpA 165 / SpD 209 / Spe 138\n• Belly Drum\n• Substitute\n• Liquidation\n• Icicle Crash",
+             "Eldegoss L86\nHP: 100.0% (243/243)\nAbility: Regenerator / Item: Leftovers\nAtk 91 / Def 204 / SpA 187 / SpD 256 / Spe 152\n• Leech Seed\n• Sleep Powder\n• Pollen Puff\n• Energy Ball",
+             "Crobat L80\nHP: 100.0% (267/267)\nAbility: Infiltrator / Item: Heavy-Duty Boots\nAtk 190 / Def 174 / SpA 158 / SpD 174 / Spe 254\n• Defog\n• Toxic\n• Brave Bird\n• Roost",
+             "Liepard L88\nHP: 100.0% (256/256)\nAbility: Prankster / Item: Leftovers\nAtk 205 / Def 138 / SpA 205 / SpD 138 / Spe 237\n• Thunder Wave\n• U-turn\n• Copycat\n• Knock Off",
+             "Drampa L86\nHP: 100.0% (274/274)\nAbility: Sap Sipper / Item: Leftovers\nAtk 108 / Def 195 / SpA 281 / SpD 206 / Spe 111\n• Roost\n• Thunderbolt\n• Draco Meteor\n• Hyper Voice"
+          ],
+          "oppoTeam": [
+             "Mewtwo L72\nHP: 13% BRN\nAbility: Unnerve\nItem: Leftovers\nSpe 192 to 229 (before items/abilities/modifiers)\n• Nasty Plot (29/32)\n• Psystrike (15/16)"
+          ],
+          "userCurr": "Ninetales L84\nHP: 0.4% (1/259)\nAbility: Drought\nItem: None (Focus Sash was consumed)\nAtk 132 / Def 174 / SpA 184 / SpD 216 / Spe 216\n(After stat modifiers:)\nAtk 132 / Def 174 / SpA 368 / SpD 216 / Spe 216\n• Solar Beam (15/16)\n• Will-O-Wisp (23/24)\n• Fire Blast (7/8)\n• Nasty Plot (31/32)",
+          "oppoCurr": "Mewtwo L72\nHP: 13% BRN\nAbility: Unnerve\nItem: Leftovers\nSpe 192 to 229 (before items/abilities/modifiers)\n• Nasty Plot (29/32)\n• Psystrike (15/16)",
+          "userMoves": [
+             "Nasty Plot\nAccuracy: can't miss\nRaises the user's Special Attack by 2 stages.",
+             "Solar Beam\nBase power: 120\nAccuracy: 100%\nThis attack charges on the first turn and executes on the second. Power is halved if the weather is Hail, Primordial Sea, Rain Dance, or Sandstorm and the user is not holding Utility Umbrella. If the user is holding a Power Herb or the weather is Desolate Land or Sunny Day, the move completes in one turn. If the user is holding Utility Umbrella and the weather is Desolate Land or Sunny Day, the move still requires a turn to charge.",
+             "Will-O-Wisp\nAccuracy: 85%\nBurns the target.",
+             "Fire Blast\nBase power: 110\nAccuracy: 85%\nHas a 10% chance to burn the target."
+          ],
+          "userMaxmoves": []
+       },
+       {
+          "weather": "",
+          "userStatus": [
+             "BRN",
+             "4× SpA"
+          ],
+          "oppoStatus": [],
+          "userTeam": [
+             "Eldegoss L86\nHP: 100.0% (243/243)\nAbility: Regenerator / Item: Leftovers\nAtk 91 / Def 204 / SpA 187 / SpD 256 / Spe 152\n• Leech Seed\n• Sleep Powder\n• Pollen Puff\n• Energy Ball",
+             "Eiscue L88\nHP: 100.0% (272/272)\nAbility: Ice Face / Item: Salac Berry\nAtk 191 / Def 244 / SpA 165 / SpD 209 / Spe 138\n• Belly Drum\n• Substitute\n• Liquidation\n• Icicle Crash",
+             "Ninetales L84\nHP: (fainted)\nAbility: Drought\nAtk 132 / Def 174 / SpA 184 / SpD 216 / Spe 216\n• Nasty Plot\n• Solar Beam\n• Will-O-Wisp\n• Fire Blast",
+             "Crobat L80\nHP: 100.0% (267/267)\nAbility: Infiltrator / Item: Heavy-Duty Boots\nAtk 190 / Def 174 / SpA 158 / SpD 174 / Spe 254\n• Defog\n• Toxic\n• Brave Bird\n• Roost",
+             "Liepard L88\nHP: 100.0% (256/256)\nAbility: Prankster / Item: Leftovers\nAtk 205 / Def 138 / SpA 205 / SpD 138 / Spe 237\n• Thunder Wave\n• U-turn\n• Copycat\n• Knock Off",
+             "Drampa L86\nHP: 100.0% (274/274)\nAbility: Sap Sipper / Item: Leftovers\nAtk 108 / Def 195 / SpA 281 / SpD 206 / Spe 111\n• Roost\n• Thunderbolt\n• Draco Meteor\n• Hyper Voice"
+          ],
+          "oppoTeam": [
+             "Mewtwo L72\nHP: 13% BRN\nAbility: Unnerve\nItem: Leftovers\nSpe 192 to 229 (before items/abilities/modifiers)\n• Nasty Plot (29/32)\n• Psystrike (14/16)"
+          ],
+          "userCurr": "Eldegoss L86\nHP: 100.0% (243/243)\nAbility: Regenerator\nItem: Leftovers\nAtk 91 / Def 204 / SpA 187 / SpD 256 / Spe 152",
+          "oppoCurr": "Mewtwo L72\nHP: 13% BRN\nAbility: Unnerve\nItem: Leftovers\nSpe 192 to 229 (before items/abilities/modifiers)\n• Nasty Plot (29/32)\n• Psystrike (14/16)",
+          "userMoves": [
+             "Leech Seed\nAccuracy: 90%\nThe Pokemon at the user's position steals 1/8 of the target's maximum HP, rounded down, at the end of each turn. If Big Root is held by the recipient, the HP recovered is 1.3x normal, rounded half down. If the target uses Baton Pass, the replacement will continue being leeched. If the target switches out or uses Rapid Spin successfully, the effect ends. Grass-type Pokemon are immune to this move on use, but not its effect.",
+             "Sleep Powder\nAccuracy: 75%\nCauses the target to fall asleep.\n✓ Powder (doesn't affect Grass, Overcoat, Safety Goggles)",
+             "Pollen Puff\nBase power: 90\nAccuracy: 100%\nIf the target is an ally, this move restores 1/2 of its maximum HP, rounded down, instead of dealing damage.\n✓ Bullet-like (doesn't affect Bulletproof pokemon)",
+             "Energy Ball\nBase power: 90\nAccuracy: 100%\nHas a 10% chance to lower the target's Special Defense by 1 stage.\n✓ Bullet-like (doesn't affect Bulletproof pokemon)"
+          ],
+          "userMaxmoves": []
+       },
+       {
+          "weather": "",
+          "userStatus": [
+             "BRN",
+             "4× SpA"
+          ],
+          "oppoStatus": [],
+          "userTeam": [
+             "Eldegoss L86\nHP: 100.0% (243/243)\nAbility: Regenerator / Item: Leftovers\nAtk 91 / Def 204 / SpA 187 / SpD 256 / Spe 152\n• Leech Seed\n• Sleep Powder\n• Pollen Puff\n• Energy Ball",
+             "Eiscue L88\nHP: 100.0% (272/272)\nAbility: Ice Face / Item: Salac Berry\nAtk 191 / Def 244 / SpA 165 / SpD 209 / Spe 138\n• Belly Drum\n• Substitute\n• Liquidation\n• Icicle Crash",
+             "Ninetales L84\nHP: (fainted)\nAbility: Drought\nAtk 132 / Def 174 / SpA 184 / SpD 216 / Spe 216\n• Nasty Plot\n• Solar Beam\n• Will-O-Wisp\n• Fire Blast",
+             "Crobat L80\nHP: 100.0% (267/267)\nAbility: Infiltrator / Item: Heavy-Duty Boots\nAtk 190 / Def 174 / SpA 158 / SpD 174 / Spe 254\n• Defog\n• Toxic\n• Brave Bird\n• Roost",
+             "Liepard L88\nHP: 100.0% (256/256)\nAbility: Prankster / Item: Leftovers\nAtk 205 / Def 138 / SpA 205 / SpD 138 / Spe 237\n• Thunder Wave\n• U-turn\n• Copycat\n• Knock Off",
+             "Drampa L86\nHP: 100.0% (274/274)\nAbility: Sap Sipper / Item: Leftovers\nAtk 108 / Def 195 / SpA 281 / SpD 206 / Spe 111\n• Roost\n• Thunderbolt\n• Draco Meteor\n• Hyper Voice"
+          ],
+          "oppoTeam": [
+             "Mewtwo L72\nHP: 63% BRN\nAbility: Unnerve\nItem: Leftovers\nSpe 192 to 229 (before items/abilities/modifiers)\n• Nasty Plot (29/32)\n• Psystrike (14/16)\n• Recover (15/16)"
+          ],
+          "userCurr": "Eldegoss L86\nHP: 100.0% (243/243)\nAbility: Regenerator\nItem: Leftovers\nAtk 91 / Def 204 / SpA 187 / SpD 256 / Spe 152\n• Leech Seed (15/16)",
+          "oppoCurr": "Mewtwo L72\nHP: 63% BRN\nAbility: Unnerve\nItem: Leftovers\nSpe 192 to 229 (before items/abilities/modifiers)\n• Nasty Plot (29/32)\n• Psystrike (14/16)\n• Recover (15/16)",
+          "userMoves": [
+             "Leech Seed\nAccuracy: 90%\nThe Pokemon at the user's position steals 1/8 of the target's maximum HP, rounded down, at the end of each turn. If Big Root is held by the recipient, the HP recovered is 1.3x normal, rounded half down. If the target uses Baton Pass, the replacement will continue being leeched. If the target switches out or uses Rapid Spin successfully, the effect ends. Grass-type Pokemon are immune to this move on use, but not its effect.",
+             "Sleep Powder\nAccuracy: 75%\nCauses the target to fall asleep.\n✓ Powder (doesn't affect Grass, Overcoat, Safety Goggles)",
+             "Pollen Puff\nBase power: 90\nAccuracy: 100%\nIf the target is an ally, this move restores 1/2 of its maximum HP, rounded down, instead of dealing damage.\n✓ Bullet-like (doesn't affect Bulletproof pokemon)",
+             "Energy Ball\nBase power: 90\nAccuracy: 100%\nHas a 10% chance to lower the target's Special Defense by 1 stage.\n✓ Bullet-like (doesn't affect Bulletproof pokemon)"
+          ],
+          "userMaxmoves": []
+       },
+       {
+          "weather": "",
+          "userStatus": [
+             "BRN",
+             "4× SpA"
+          ],
+          "oppoStatus": [],
+          "userTeam": [
+             "Drampa L86\nHP: 100.0% (274/274)\nAbility: Sap Sipper / Item: Leftovers\nAtk 108 / Def 195 / SpA 281 / SpD 206 / Spe 111\n• Roost\n• Thunderbolt\n• Draco Meteor\n• Hyper Voice",
+             "Eiscue L88\nHP: 100.0% (272/272)\nAbility: Ice Face / Item: Salac Berry\nAtk 191 / Def 244 / SpA 165 / SpD 209 / Spe 138\n• Belly Drum\n• Substitute\n• Liquidation\n• Icicle Crash",
+             "Ninetales L84\nHP: (fainted)\nAbility: Drought\nAtk 132 / Def 174 / SpA 184 / SpD 216 / Spe 216\n• Nasty Plot\n• Solar Beam\n• Will-O-Wisp\n• Fire Blast",
+             "Crobat L80\nHP: 100.0% (267/267)\nAbility: Infiltrator / Item: Heavy-Duty Boots\nAtk 190 / Def 174 / SpA 158 / SpD 174 / Spe 254\n• Defog\n• Toxic\n• Brave Bird\n• Roost",
+             "Liepard L88\nHP: 100.0% (256/256)\nAbility: Prankster / Item: Leftovers\nAtk 205 / Def 138 / SpA 205 / SpD 138 / Spe 237\n• Thunder Wave\n• U-turn\n• Copycat\n• Knock Off",
+             "Eldegoss L86\nHP: (fainted)\nAbility: Regenerator / Item: Leftovers\nAtk 91 / Def 204 / SpA 187 / SpD 256 / Spe 152\n• Leech Seed\n• Sleep Powder\n• Pollen Puff\n• Energy Ball"
+          ],
+          "oppoTeam": [
+             "Mewtwo L72\nHP: 63% BRN\nAbility: Unnerve\nItem: Leftovers\nSpe 192 to 229 (before items/abilities/modifiers)\n• Nasty Plot (29/32)\n• Psystrike (14/16)\n• Recover (15/16)\n• Ice Beam (15/16)"
+          ],
+          "userCurr": "Drampa L86\nHP: 100.0% (274/274)\nAbility: Sap Sipper\nItem: Leftovers\nAtk 108 / Def 195 / SpA 281 / SpD 206 / Spe 111",
+          "oppoCurr": "Mewtwo L72\nHP: 63% BRN\nAbility: Unnerve\nItem: Leftovers\nSpe 192 to 229 (before items/abilities/modifiers)\n• Nasty Plot (29/32)\n• Psystrike (14/16)\n• Recover (15/16)\n• Ice Beam (15/16)",
+          "userMoves": [
+             "Roost\nAccuracy: can't miss\nThe user restores 1/2 of its maximum HP, rounded half up. Until the end of the turn, Flying-type users lose their Flying type and pure Flying-type users become Normal type. Does nothing if the user's HP is full.",
+             "Thunderbolt\nBase power: 90\nAccuracy: 100%\nHas a 10% chance to paralyze the target.",
+             "Draco Meteor\nBase power: 130\nAccuracy: 90%\nLowers the user's Special Attack by 2 stages.",
+             "Hyper Voice\nBase power: 90\nAccuracy: 100%\nNo additional effect.\nBypasses Substitute (but does not break it)\n✓ Sound (doesn't affect Soundproof pokemon)"
+          ],
+          "userMaxmoves": []
+       },
+       {
+          "weather": "",
+          "userStatus": [
+             "BRN",
+             "4× SpA"
+          ],
+          "oppoStatus": [],
+          "userTeam": [
+             "Liepard L88\nHP: 100.0% (256/256)\nAbility: Prankster / Item: Leftovers\nAtk 205 / Def 138 / SpA 205 / SpD 138 / Spe 237\n• Thunder Wave\n• U-turn\n• Copycat\n• Knock Off",
+             "Eiscue L88\nHP: 100.0% (272/272)\nAbility: Ice Face / Item: Salac Berry\nAtk 191 / Def 244 / SpA 165 / SpD 209 / Spe 138\n• Belly Drum\n• Substitute\n• Liquidation\n• Icicle Crash",
+             "Ninetales L84\nHP: (fainted)\nAbility: Drought\nAtk 132 / Def 174 / SpA 184 / SpD 216 / Spe 216\n• Nasty Plot\n• Solar Beam\n• Will-O-Wisp\n• Fire Blast",
+             "Crobat L80\nHP: 100.0% (267/267)\nAbility: Infiltrator / Item: Heavy-Duty Boots\nAtk 190 / Def 174 / SpA 158 / SpD 174 / Spe 254\n• Defog\n• Toxic\n• Brave Bird\n• Roost",
+             "Drampa L86\nHP: (fainted)\nAbility: Sap Sipper / Item: Leftovers\nAtk 108 / Def 195 / SpA 281 / SpD 206 / Spe 111\n• Roost\n• Thunderbolt\n• Draco Meteor\n• Hyper Voice",
+             "Eldegoss L86\nHP: (fainted)\nAbility: Regenerator / Item: Leftovers\nAtk 91 / Def 204 / SpA 187 / SpD 256 / Spe 152\n• Leech Seed\n• Sleep Powder\n• Pollen Puff\n• Energy Ball"
+          ],
+          "oppoTeam": [
+             "Mewtwo L72\nHP: 63% BRN\nAbility: Unnerve\nItem: Leftovers\nSpe 192 to 229 (before items/abilities/modifiers)\n• Nasty Plot (29/32)\n• Psystrike (14/16)\n• Recover (15/16)\n• Ice Beam (14/16)"
+          ],
+          "userCurr": "Liepard L88\nHP: 100.0% (256/256)\nAbility: Prankster\nItem: Leftovers\nAtk 205 / Def 138 / SpA 205 / SpD 138 / Spe 237",
+          "oppoCurr": "Mewtwo L72\nHP: 63% BRN\nAbility: Unnerve\nItem: Leftovers\nSpe 192 to 229 (before items/abilities/modifiers)\n• Nasty Plot (29/32)\n• Psystrike (14/16)\n• Recover (15/16)\n• Ice Beam (14/16)",
+          "userMoves": [
+             "Thunder Wave\nAccuracy: 90%\nParalyzes the target. This move does not ignore type immunity.",
+             "U-turn\nBase power: 70\nAccuracy: 100%\nIf this move is successful and the user has not fainted, the user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members, or if the target switched out using an Eject Button or through the effect of the Emergency Exit or Wimp Out Abilities.\n✓ Contact (triggers Iron Barbs, Spiky Shield, etc)",
+             "Copycat\nAccuracy: can't miss\nThe user uses the last move used by any Pokemon, including itself. The base move of Max and G-Max Moves is considered for this purpose. Fails if no move has been used, or if the last move used was Assist, Baneful Bunker, Beak Blast, Belch, Bestow, Celebrate, Chatter, Circle Throw, Copycat, Counter, Covet, Crafty Shield, Destiny Bond, Detect, Dragon Tail, Dynamax Cannon, Endure, Feint, Focus Punch, Follow Me, Helping Hand, Hold Hands, King's Shield, Mat Block, Me First, Metronome, Mimic, Mirror Coat, Mirror Move, Nature Power, Obstruct, Protect, Rage Powder, Roar, Shell Trap, Sketch, Sleep Talk, Snatch, Spiky Shield, Spotlight, Struggle, Switcheroo, Thief, Transform, Trick, or Whirlwind.",
+             "Knock Off\nBase power: 65\nAccuracy: 100%\nIf the target is holding an item that can be removed from it, ignoring the Sticky Hold Ability, this move's power is multiplied by 1.5. If the user has not fainted, the target loses its held item. This move cannot cause Pokemon with the Sticky Hold Ability to lose their held item or cause a Kyogre, a Groudon, a Giratina, an Arceus, a Genesect, a Silvally, a Zacian, or a Zamazenta to lose their Blue Orb, Red Orb, Griseous Orb, Plate, Drive, Memory, Rusted Sword, or Rusted Shield respectively. Items lost to this move cannot be regained with Recycle or the Harvest Ability.\n✓ Contact (triggers Iron Barbs, Spiky Shield, etc)"
+          ],
+          "userMaxmoves": []
+       },
+       {
+          "weather": "",
+          "userStatus": [
+             "BRN",
+             "4× SpA"
+          ],
+          "oppoStatus": [],
+          "userTeam": [
+             "Crobat L80\nHP: 100.0% (267/267)\nAbility: Infiltrator / Item: Heavy-Duty Boots\nAtk 190 / Def 174 / SpA 158 / SpD 174 / Spe 254\n• Defog\n• Toxic\n• Brave Bird\n• Roost",
+             "Eiscue L88\nHP: 100.0% (272/272)\nAbility: Ice Face / Item: Salac Berry\nAtk 191 / Def 244 / SpA 165 / SpD 209 / Spe 138\n• Belly Drum\n• Substitute\n• Liquidation\n• Icicle Crash",
+             "Ninetales L84\nHP: (fainted)\nAbility: Drought\nAtk 132 / Def 174 / SpA 184 / SpD 216 / Spe 216\n• Nasty Plot\n• Solar Beam\n• Will-O-Wisp\n• Fire Blast",
+             "Liepard L88\nHP: (fainted)\nAbility: Prankster / Item: Leftovers\nAtk 205 / Def 138 / SpA 205 / SpD 138 / Spe 237\n• Thunder Wave\n• U-turn\n• Copycat\n• Knock Off",
+             "Drampa L86\nHP: (fainted)\nAbility: Sap Sipper / Item: Leftovers\nAtk 108 / Def 195 / SpA 281 / SpD 206 / Spe 111\n• Roost\n• Thunderbolt\n• Draco Meteor\n• Hyper Voice",
+             "Eldegoss L86\nHP: (fainted)\nAbility: Regenerator / Item: Leftovers\nAtk 91 / Def 204 / SpA 187 / SpD 256 / Spe 152\n• Leech Seed\n• Sleep Powder\n• Pollen Puff\n• Energy Ball"
+          ],
+          "oppoTeam": [
+             "Mewtwo L72\nHP: 37% BRN\nAbility: Unnerve\nItem: Leftovers\nSpe 192 to 229 (before items/abilities/modifiers)\n• Nasty Plot (29/32)\n• Psystrike (14/16)\n• Recover (15/16)\n• Ice Beam (13/16)"
+          ],
+          "userCurr": "Crobat L80\nHP: 100.0% (267/267)\nAbility: Infiltrator\nItem: Heavy-Duty Boots\nAtk 190 / Def 174 / SpA 158 / SpD 174 / Spe 254",
+          "oppoCurr": "Mewtwo L72\nHP: 37% BRN\nAbility: Unnerve\nItem: Leftovers\nSpe 192 to 229 (before items/abilities/modifiers)\n• Nasty Plot (29/32)\n• Psystrike (14/16)\n• Recover (15/16)\n• Ice Beam (13/16)",
+          "userMoves": [
+             "Defog\nAccuracy: can't miss\nLowers the target's evasiveness by 1 stage. If this move is successful and whether or not the target's evasiveness was affected, the effects of Reflect, Light Screen, Aurora Veil, Safeguard, Mist, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the target's side, and the effects of Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the user's side. Ignores a target's substitute, although a substitute will still block the lowering of evasiveness. If there is a terrain active and this move is successful, the terrain will be cleared.\nBypasses Substitute (but does not break it)",
+             "Toxic\nAccuracy: can't miss (Poison type)\nBadly poisons the target. If a Poison-type Pokemon uses this move, the target cannot avoid the attack, even if the target is in the middle of a two-turn move.",
+             "Brave Bird\nBase power: 120\nAccuracy: 100%\nIf the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.\n✓ Contact (triggers Iron Barbs, Spiky Shield, etc)",
+             "Roost\nAccuracy: can't miss\nThe user restores 1/2 of its maximum HP, rounded half up. Until the end of the turn, Flying-type users lose their Flying type and pure Flying-type users become Normal type. Does nothing if the user's HP is full."
+          ],
+          "userMaxmoves": []
+       },
+       {
+          "weather": "",
+          "userStatus": [
+             "BRN",
+             "4× SpA"
+          ],
+          "oppoStatus": [],
+          "userTeam": [
+             "Crobat L80\nHP: 100.0% (267/267)\nAbility: Infiltrator / Item: Heavy-Duty Boots\nAtk 190 / Def 174 / SpA 158 / SpD 174 / Spe 254\n• Defog\n• Toxic\n• Brave Bird\n• Roost",
+             "Eiscue L88\nHP: 100.0% (272/272)\nAbility: Ice Face / Item: Salac Berry\nAtk 191 / Def 244 / SpA 165 / SpD 209 / Spe 138\n• Belly Drum\n• Substitute\n• Liquidation\n• Icicle Crash",
+             "Ninetales L84\nHP: (fainted)\nAbility: Drought\nAtk 132 / Def 174 / SpA 184 / SpD 216 / Spe 216\n• Nasty Plot\n• Solar Beam\n• Will-O-Wisp\n• Fire Blast",
+             "Liepard L88\nHP: (fainted)\nAbility: Prankster / Item: Leftovers\nAtk 205 / Def 138 / SpA 205 / SpD 138 / Spe 237\n• Thunder Wave\n• U-turn\n• Copycat\n• Knock Off",
+             "Drampa L86\nHP: (fainted)\nAbility: Sap Sipper / Item: Leftovers\nAtk 108 / Def 195 / SpA 281 / SpD 206 / Spe 111\n• Roost\n• Thunderbolt\n• Draco Meteor\n• Hyper Voice",
+             "Eldegoss L86\nHP: (fainted)\nAbility: Regenerator / Item: Leftovers\nAtk 91 / Def 204 / SpA 187 / SpD 256 / Spe 152\n• Leech Seed\n• Sleep Powder\n• Pollen Puff\n• Energy Ball"
+          ],
+          "oppoTeam": [
+             "Mewtwo L72\nHP: 37% BRN\nAbility: Unnerve\nItem: Leftovers\nSpe 192 to 229 (before items/abilities/modifiers)\n• Nasty Plot (29/32)\n• Psystrike (14/16)\n• Recover (15/16)\n• Ice Beam (13/16)"
+          ],
+          "userCurr": "Crobat L80\nHP: 100.0% (267/267)\nAbility: Infiltrator\nItem: Heavy-Duty Boots\nAtk 190 / Def 174 / SpA 158 / SpD 174 / Spe 254",
+          "oppoCurr": "Mewtwo L72\nHP: 37% BRN\nAbility: Unnerve\nItem: Leftovers\nSpe 192 to 229 (before items/abilities/modifiers)\n• Nasty Plot (29/32)\n• Psystrike (14/16)\n• Recover (15/16)\n• Ice Beam (13/16)",
+          "userMoves": [
+             "Defog\nAccuracy: can't miss\nLowers the target's evasiveness by 1 stage. If this move is successful and whether or not the target's evasiveness was affected, the effects of Reflect, Light Screen, Aurora Veil, Safeguard, Mist, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the target's side, and the effects of Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the user's side. Ignores a target's substitute, although a substitute will still block the lowering of evasiveness. If there is a terrain active and this move is successful, the terrain will be cleared.\nBypasses Substitute (but does not break it)",
+             "Toxic\nAccuracy: can't miss (Poison type)\nBadly poisons the target. If a Poison-type Pokemon uses this move, the target cannot avoid the attack, even if the target is in the middle of a two-turn move.",
+             "Brave Bird\nBase power: 120\nAccuracy: 100%\nIf the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.\n✓ Contact (triggers Iron Barbs, Spiky Shield, etc)",
+             "Roost\nAccuracy: can't miss\nThe user restores 1/2 of its maximum HP, rounded half up. Until the end of the turn, Flying-type users lose their Flying type and pure Flying-type users become Normal type. Does nothing if the user's HP is full."
+          ],
+          "userMaxmoves": []
+       },
+       {
+          "weather": "",
+          "userStatus": [
+             "BRN",
+             "4× SpA"
+          ],
+          "oppoStatus": [],
+          "userTeam": [
+             "Crobat L80\nHP: 100.0% (267/267)\nAbility: Infiltrator / Item: Heavy-Duty Boots\nAtk 190 / Def 174 / SpA 158 / SpD 174 / Spe 254\n• Defog\n• Toxic\n• Brave Bird\n• Roost",
+             "Eiscue L88\nHP: 100.0% (272/272)\nAbility: Ice Face / Item: Salac Berry\nAtk 191 / Def 244 / SpA 165 / SpD 209 / Spe 138\n• Belly Drum\n• Substitute\n• Liquidation\n• Icicle Crash",
+             "Ninetales L84\nHP: (fainted)\nAbility: Drought\nAtk 132 / Def 174 / SpA 184 / SpD 216 / Spe 216\n• Nasty Plot\n• Solar Beam\n• Will-O-Wisp\n• Fire Blast",
+             "Liepard L88\nHP: (fainted)\nAbility: Prankster / Item: Leftovers\nAtk 205 / Def 138 / SpA 205 / SpD 138 / Spe 237\n• Thunder Wave\n• U-turn\n• Copycat\n• Knock Off",
+             "Drampa L86\nHP: (fainted)\nAbility: Sap Sipper / Item: Leftovers\nAtk 108 / Def 195 / SpA 281 / SpD 206 / Spe 111\n• Roost\n• Thunderbolt\n• Draco Meteor\n• Hyper Voice",
+             "Eldegoss L86\nHP: (fainted)\nAbility: Regenerator / Item: Leftovers\nAtk 91 / Def 204 / SpA 187 / SpD 256 / Spe 152\n• Leech Seed\n• Sleep Powder\n• Pollen Puff\n• Energy Ball"
+          ],
+          "oppoTeam": [
+             "Mewtwo L72\nHP: 37% BRN\nAbility: Unnerve\nItem: Leftovers\nSpe 192 to 229 (before items/abilities/modifiers)\n• Nasty Plot (29/32)\n• Psystrike (14/16)\n• Recover (15/16)\n• Ice Beam (13/16)"
+          ],
+          "userCurr": "Crobat L80\nHP: 100.0% (267/267)\nAbility: Infiltrator\nItem: Heavy-Duty Boots\nAtk 190 / Def 174 / SpA 158 / SpD 174 / Spe 254",
+          "oppoCurr": "Mewtwo L72\nHP: 37% BRN\nAbility: Unnerve\nItem: Leftovers\nSpe 192 to 229 (before items/abilities/modifiers)\n• Nasty Plot (29/32)\n• Psystrike (14/16)\n• Recover (15/16)\n• Ice Beam (13/16)",
+          "userMoves": [
+             "Defog\nAccuracy: can't miss\nLowers the target's evasiveness by 1 stage. If this move is successful and whether or not the target's evasiveness was affected, the effects of Reflect, Light Screen, Aurora Veil, Safeguard, Mist, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the target's side, and the effects of Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the user's side. Ignores a target's substitute, although a substitute will still block the lowering of evasiveness. If there is a terrain active and this move is successful, the terrain will be cleared.\nBypasses Substitute (but does not break it)",
+             "Toxic\nAccuracy: can't miss (Poison type)\nBadly poisons the target. If a Poison-type Pokemon uses this move, the target cannot avoid the attack, even if the target is in the middle of a two-turn move.",
+             "Brave Bird\nBase power: 120\nAccuracy: 100%\nIf the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.\n✓ Contact (triggers Iron Barbs, Spiky Shield, etc)",
+             "Roost\nAccuracy: can't miss\nThe user restores 1/2 of its maximum HP, rounded half up. Until the end of the turn, Flying-type users lose their Flying type and pure Flying-type users become Normal type. Does nothing if the user's HP is full."
+          ],
+          "userMaxmoves": []
+       },
+       {
+          "weather": "",
+          "userStatus": [
+             "BRN",
+             "4× SpA"
+          ],
+          "oppoStatus": [],
+          "userTeam": [
+             "Eiscue L88\nHP: 100.0% (272/272)\nAbility: Ice Face / Item: Salac Berry\nAtk 191 / Def 244 / SpA 165 / SpD 209 / Spe 138\n• Belly Drum\n• Substitute\n• Liquidation\n• Icicle Crash",
+             "Crobat L80\nHP: (fainted)\nAbility: Infiltrator / Item: Heavy-Duty Boots\nAtk 190 / Def 174 / SpA 158 / SpD 174 / Spe 254\n• Defog\n• Toxic\n• Brave Bird\n• Roost",
+             "Ninetales L84\nHP: (fainted)\nAbility: Drought\nAtk 132 / Def 174 / SpA 184 / SpD 216 / Spe 216\n• Nasty Plot\n• Solar Beam\n• Will-O-Wisp\n• Fire Blast",
+             "Liepard L88\nHP: (fainted)\nAbility: Prankster / Item: Leftovers\nAtk 205 / Def 138 / SpA 205 / SpD 138 / Spe 237\n• Thunder Wave\n• U-turn\n• Copycat\n• Knock Off",
+             "Drampa L86\nHP: (fainted)\nAbility: Sap Sipper / Item: Leftovers\nAtk 108 / Def 195 / SpA 281 / SpD 206 / Spe 111\n• Roost\n• Thunderbolt\n• Draco Meteor\n• Hyper Voice",
+             "Eldegoss L86\nHP: (fainted)\nAbility: Regenerator / Item: Leftovers\nAtk 91 / Def 204 / SpA 187 / SpD 256 / Spe 152\n• Leech Seed\n• Sleep Powder\n• Pollen Puff\n• Energy Ball"
+          ],
+          "oppoTeam": [
+             "Mewtwo L72\nHP: 37% BRN\nAbility: Unnerve\nItem: Leftovers\nSpe 192 to 229 (before items/abilities/modifiers)\n• Nasty Plot (29/32)\n• Psystrike (13/16)\n• Recover (15/16)\n• Ice Beam (13/16)"
+          ],
+          "userCurr": "Eiscue L88\nHP: 100.0% (272/272)\nAbility: Ice Face\nItem: Salac Berry\nAtk 191 / Def 244 / SpA 165 / SpD 209 / Spe 138",
+          "oppoCurr": "Mewtwo L72\nHP: 37% BRN\nAbility: Unnerve\nItem: Leftovers\nSpe 192 to 229 (before items/abilities/modifiers)\n• Nasty Plot (29/32)\n• Psystrike (13/16)\n• Recover (15/16)\n• Ice Beam (13/16)",
+          "userMoves": [
+             "Belly Drum\nAccuracy: can't miss\nRaises the user's Attack by 12 stages in exchange for the user losing 1/2 of its maximum HP, rounded down. Fails if the user would faint or if its Attack stat stage is 6.",
+             "Substitute\nAccuracy: can't miss\nThe user takes 1/4 of its maximum HP, rounded down, and puts it into a substitute to take its place in battle. The substitute is removed once enough damage is inflicted on it, or if the user switches out or faints. Baton Pass can be used to transfer the substitute to an ally, and the substitute will keep its remaining HP. Until the substitute is broken, it receives damage from all attacks made by other Pokemon and shields the user from status effects and stat stage changes caused by other Pokemon. Sound-based moves and Pokemon with the Infiltrator Ability ignore substitutes. The user still takes normal damage from weather and status effects while behind its substitute. If the substitute breaks during a multi-hit attack, the user will take damage from any remaining hits. If a substitute is created while the user is trapped by a binding move, the binding effect ends immediately. Fails if the user does not have enough HP remaining to create a substitute without fainting, or if it already has a substitute.",
+             "Liquidation\nBase power: 85\nAccuracy: 100%\nHas a 20% chance to lower the target's Defense by 1 stage.\n✓ Contact (triggers Iron Barbs, Spiky Shield, etc)",
+             "Icicle Crash\nBase power: 85\nAccuracy: 90%\nHas a 30% chance to flinch the target."
+          ],
+          "userMaxmoves": []
+       }
+    ]
+ }
+ 
+ 
