@@ -22,6 +22,18 @@ Before any sort of project it was essential to understand how the entire project
 
 dynamics of the game so this notebook extracts all possible data from smogon resources such as pokemon data , move data , battle records , image resources etc
 
+- **Smogon University**
+
+  This section extracts data from smogon resources
+
+- **Playing PokemonShowdown**
+
+  In this section , replays of previously played games are parsed and stored in json format . Each json file store the status of both teams as well as field along with the moves played at each turn
+
+- **Bot**
+
+  This section holds the code for selenium to be able to play pokemonshowdown as a bot against real players . This is just to test how the code will interact with the controls of pokemonShowdown . More on this in analyser
+
 **Teambuilder Extension**
 
 *Chrome Extension that will be used as an assistant in teambuilder*
@@ -50,6 +62,9 @@ To build and push to aws lambda
 **Analyzer**
 
 This consists of a node environment where analysis of the pokemon showdown game mechanics take place with the help of various smogon npm packages 
+
+It uses the said packages to create functions that would provide the best action when given the state of a battle
+*Once the AI is ready with strategies of the game , we will use selenium in this and start running the bot against real players , Elo rating will be used to judge bot difficulty*
 
 ## References
 

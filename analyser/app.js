@@ -34,6 +34,7 @@ class Situation{
         this.userCurr = null
         this.oppoCurr = null
         this.options = []
+        this.oppoOptions = []
         this.field = new Field()
     }
     
@@ -42,7 +43,7 @@ class Situation{
         console.log(this.team)
     }
 
-    applyMoveConditions(){
+    applyMoveConditions(move){
 
     }
 
@@ -82,9 +83,7 @@ class Situation{
     }
 
     parsePokemon(pokestring){
-        let pokename ,Hp=0, options = {
- 
-        }
+        let pokename ,Hp=0, options = {}
         let namere = /^(\w+(-?\w*)+)/g
         let lvlre = /L(\d+)/g
         let abilityre = /Ability: (\w+(.?\w*)+)/g
@@ -107,10 +106,28 @@ class Situation{
                 options["item"] = match[1]
             }
         }
+        result = pokestring.matchAll(/•.(\w+(\ ?\w+)+)/g)
+        options['moves'] = []
+        for (let match of result){
+            options.moves.push(match[1])
+        }
         result = pokestring.matchAll(/HP: (\d+\.?\d*)\%./g)
         for (let match of result){
             Hp = Number(match[1])
         }
+        let statusMap = {
+            "PAR" :  'Paralyzed',
+            "PSN" : 'Poisoned',
+            "TOX" : 'Badly Poisoned' ,
+            "BRN" : 'Burned',
+            "SLP" : 'Asleep',
+            "FRZ" : 'Frozen'
+        }
+        result = pokestring.matchAll(/([A-Z]{3})/g)
+        for (let match of result){
+            options['status'] = statusMap[match[1]]
+        }
+        
         options['curHP'] = Hp/100 * (new Pokemon(8,pokename,options)).stats.hp
         return {
             name : pokename,
@@ -120,11 +137,56 @@ class Situation{
 
     generatePokemon(pokestring){
         let p = this.parsePokemon(pokestring)
-        console.log(p)
-        console.log(new Pokemon(8,p.name,p.options).curHP)
+        return new Pokemon(8,p.name,p.options)
     }
 
-    
+    getCurrStatus(CurrStatus){
+        CurrStatus = CurrStatus.join('\n')
+        let status = "Healthy"
+        let statusMap = {
+            "PAR" :  'Paralyzed',
+            "PSN" : 'Poisoned',
+            "TOX" : 'Badly Poisoned' ,
+            "BRN" : 'Burned',
+            "SLP" : 'Asleep',
+            "FRZ" : 'Frozen'
+        }
+        let boosts = {}
+        // const boostTable = [1, 1.5, 2, 2.5, 3, 3.5, 4];
+        const boostTable = {
+            1.5 : 1,
+            2 : 2,
+            2.5 :3 ,
+            3 :4 ,
+            3.5 :5 ,
+            4 :6 ,
+            0.67 : -1,
+            0.5 : -2,
+            0.4 : -3 ,
+            0.33 : -4 ,
+            0.29 : -5 ,
+            0.25 : -6 ,
+        };
+        
+        let result = CurrStatus.matchAll(/([A-Z]{3})/g)
+        for (const match of result) {
+            status = statusMap[match[1]]
+        } 
+        result = CurrStatus.matchAll(/(\d\.?\d*)×.(\w{3})/g)
+        for (const match of result) {
+            let val = Number(match[1])
+            boosts[match[2].toLowerCase()] = boostTable[val]
+        }
+        return {status:status,boosts:boosts}
+    }
+
+    generateCurrPokemon(pokestring,status){
+        let addopt = this.getCurrStatus(status)
+        let p = this.parsePokemon(pokestring)
+        p.options["status"] = addopt.status
+        p.options["boosts"] = addopt.boosts
+        return new Pokemon(8,p.name,p.options)
+    }
 
     read(situation){
         this.getField(situation['weather'])
@@ -140,7 +202,9 @@ class Situation{
         situation['oppoTeam'].forEach(element=>{
             this.oppoTeam.push(this.generatePokemon(element))
         })
-        
+        this.userCurr = this.generateCurrPokemon(situation['userCurr'] , situation['oppoStatus'])
+        this.oppoCurr = this.generateCurrPokemon(situation['oppoCurr'] , situation['userStatus'])
+        console.log(this.userCurr ,this.oppoCurr)
     }
 }
 
@@ -148,4 +212,4 @@ let situ = new Situation()
 
 let data = fs.readFileSync('situations.json')
 data = JSON.parse(data)
-situ.read(data['situations'][8])
+situ.read(data['situations'][7])
